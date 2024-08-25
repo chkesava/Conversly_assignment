@@ -1,11 +1,12 @@
 .matrix-container {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 10px;
-    justify-content: center;
+    width: 100vw;
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    justify-content: center;
+   
+  
   }
   
   .box {
@@ -15,9 +16,31 @@
     border: 2px solid #ccc;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 10px;
   }
   
+
+.navbar{
+  background-image: linear-gradient(
+    #7f7fd5, 
+    #91eae4
+  );
+}
+
   .box:hover {
     border-color: #888;
   }
-  
+
+    .navbar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 10px;
+    }
+
+  @media  (min-width:700px) {
+    .matrix-container{
+      margin-left: 30%;
+      margin-top: 10%;
+    }
+  }

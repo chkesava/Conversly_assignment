@@ -1,0 +1,51 @@
+/* Home.css */
+
+.hero-section {
+  background-image: linear-gradient(
+    #7f7fd5, 
+    #91eae4
+  );
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section-sm {
+  height: 50vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.styled-button {
+  background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #91a6ff 74%);
+  padding: 16px 32px;
+  margin: 16px;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
+  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 5px;
+}
+
+.styled-button:hover {
+  background-color: #f50057;
+  transform: scale(1.05);
+}

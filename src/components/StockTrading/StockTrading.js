@@ -17,6 +17,12 @@ import {
 } from '@mui/material';
 import { mockStockData, getUpdatedStockData } from './mockStockData';
 
+import { Link } from 'react-router-dom';
+
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
+import './index.css'
+
 const PRICE_UPDATE_INTERVAL = 7000;
 
 const calculateItemsPerPage = () => {
@@ -167,7 +173,12 @@ const StockTrading = () => {
   };
 
   return (
-    <Container>
+    <>
+    <Link to="/" className="back-button">
+        <ArrowBackIcon />
+        <span>Back</span>
+    </Link>
+    <Container className='main-con'>
       <Typography variant="h4" gutterBottom>
         Stock Market Application
       </Typography>
@@ -240,6 +251,7 @@ const StockTrading = () => {
         </Alert>
       </Snackbar>
     </Container>
+    </>
   );
 };
 
