@@ -44,7 +44,7 @@ const StockTrading = () => {
 
   useEffect(() => {
     const storedHoldings = JSON.parse(localStorage.getItem('holdings')) || {};
-    const storedBalance = parseFloat(localStorage.getItem('balance')) || 10000;
+    const storedBalance = parseFloat(localStorage.getItem('balance')) || 30000;
     setHoldings(storedHoldings);
     setBalance(storedBalance);
   }, []);
